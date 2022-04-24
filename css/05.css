@@ -1,0 +1,108 @@
+html{
+
+}
+html,body{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    font-family: arial;
+}
+a{
+    text-decoration:none;
+}
+h1{
+    font-size: 50px;
+}
+.nv{
+    background-color:white;
+    height: 60px;
+    display: block;
+}
+.nv .tap{
+    margin-top: 5px;
+    margin-left: 20px;
+    color: #FF686C;
+    float: left;
+    font-size: 40px;
+    opacity: 1;
+    transition: 0s;
+}
+.nv a{
+    inset: 15px;
+    color: #FF686C;
+}
+.nv p{
+    margin-top: 10px;
+    margin-right: 1em;
+    padding: 0.4em 1em;
+    font-size: 20px;
+    font-weight: 400;
+    float: right;
+    border:solid #FF686C 1px;
+    border-radius: 100px;
+    transition: 0s;
+}
+.banner{
+    background-image: url(https://cdn.jsdelivr.net/gh/CreepZzArt/img/06img/06index1.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+.banner h1{
+    padding: 3.5em 0 0 0;
+    margin: 0;
+    clear: both;
+}
+.banner p{
+    padding: 0 0.75em 0 0;
+}
+.url{
+    color: #FF686C;
+}
+.banner a p{
+    background-color: white;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.75em 0;
+    border-radius: 50px;
+    opacity: 1;
+    transition: 0s;
+}
+.raw{
+    width: 100%;
+}
+.raw-box{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    margin: 1em 1em;
+    border:solid white 1px;
+    border-radius: 25px;
+}
+.raw-box p{
+    margin-left: 20px;
+    font-size: 30px;
+}
+.raw-box i{
+    padding: 0.5em 0 0 0;
+}
+/* 悬浮 */
+.banner a p:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.nv .tap:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.nv p:hover{
+    background-color: #FF686C;
+    color: white;
+    transition: 0.3s;
+}
