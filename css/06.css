@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(255, 217, 0);
+}
+.player{
+    background-color: rgb(134, 34, 34);
+    height: 200px;
+    width: 140px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border:10px solid #000;
+    border-bottom: none;
+    border-radius: 60px 80px 0 0; 
+    z-index: 1;
+}
+.player::after{
+    content: "";
+    position: absolute;
+    width: 92%;
+    height: 85%;
+    background-color: rgb(240, 51, 51);
+    top: 2.5px;
+    left: 6px;
+    border-radius: 50% 70% 28% 42% / 28% 56% 88% 89%;
+}
+.legs{
+    height: 40px;
+    width: 50px;
+    background-color: rgb(134, 34, 34);
+    position: absolute;
+    bottom: -50px;
+    left: -10px;
+    z-index: 1;
+    border:10px solid #000;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+}
+.legs::before{
+    content: "";
+    height: 40px;
+    width: 50px;
+    background-color: rgb(134, 34, 34);
+    position: absolute;
+    right: -100px;
+    border:10px solid #000;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+}
+.legs::after{
+    content: "";
+    height: 10px;
+    width: 55px;
+    position: absolute;
+    left: 50px;
+    background-color: #000;
+    border-radius: 0 0 20px 20px;
+}
+.back{
+    height: 120px;
+    width: 35px;
+    position: absolute;
+    border:10px solid #000;
+    background-color: rgb(134, 34, 34);
+    left: -55px;
+    top:65px;
+    border-radius: 20px 0 0 20px;
+}
+.back::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(240, 51, 51);
+    width: 34px;
+    height: 26px;
+    right: 0px;
+    border-radius: 12px 0 0 8px;
+}
+.glass{
+    height: 60px;
+    width: 120px;
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(5, 73, 135);
+    top: 30px;
+    right: -30px;
+    border:10px solid #000;
+    border-radius: 20px 50px 30px 30px;
+}
+.glass::before{
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 65%;
+    background-color: aqua;
+    border-radius: 0 28px 3px 30px;
+    right: 0px;
+}
+.glass::after{
+    content: "";
+    width: 50px;
+    height: 15px;
+    position: absolute;
+    background-color: white;
+    right: 20px;
+    top: 5px;
+    border-radius: 30px 0px 30px 0px;
+    transform: rotate(6deg);
+}
+.shadow{
+    height: 40px;
+    width: 210px;
+    position: absolute;
+    background-color: #000;
+    bottom: -60px;
+    right: -30px;
+    opacity: 0.1;
+    border-radius: 50%;
+    z-index: 0;
+}

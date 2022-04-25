@@ -54,6 +54,7 @@ h1{
 .banner h1{
     padding: 3.5em 0 0 0;
     margin: 0;
+    /* clear: both;清除浮动 */
     clear: both;
 }
 .banner p{
