@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(44, 44, 58);
+}
+.conetner{
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px #000;   
+}
+.the-box{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-bottom: 2px solid rgb(218, 216, 216);
+    position: relative;
+}
+.the-box .the-bot{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(105, 105, 105);
+    /* 去除按钮边框样式 */
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.the-box .the-bot.active{
+    color: rgb(207, 92, 92);
+}
+.line{
+    position:absolute;
+    top:40px;
+    left: 31px;
+    width: 70px;
+    height: 5px;
+    background-color: rgb(207, 92, 92);
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
