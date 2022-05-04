@@ -53,6 +53,15 @@ body{
 	border-radius: 15px;
 	background: #000;
 	order: auto;
+	animation: switch linear 5s infinite;
+}
+@-webkit-keyframes switch{
+	from{
+		background-image: linear-gradient(to top, #4278ca, #009ac9, #4eb2b5, #97c3ad, #cdd3bf);
+	}
+	to{
+		background-image: linear-gradient(to top, #ca42bc, #ef5d83, #e78f6e, #d2b789, #cdd3bf);
+	}
 }
 .d3d{
     display: flex;
