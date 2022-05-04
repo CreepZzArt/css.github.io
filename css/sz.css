@@ -1,0 +1,100 @@
+body{
+    padding: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.the-box{
+	box-sizing: border-box;
+	padding: 10px;
+	width: 200px;
+	height: 200px;
+	background: #fff;
+	display: flex;	
+	box-shadow: 0 0 5px #000 inset;
+}
+#one{
+    justify-content: center;
+	align-items: center;
+}
+#two{
+    flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+#three{
+    flex-direction: row;
+	justify-content: space-between;
+	align-items:flex-start ;
+}
+#three :nth-child(2){
+    align-self: center;
+}
+#three :nth-child(3){
+    align-self: flex-end;
+}
+#four,#five,#six{
+    flex-wrap: wrap;
+	justify-content: space-between;
+	align-content:space-between ;
+}
+#five :nth-child(2){
+	justify-content: center;
+}
+.pack{
+    display: flex;
+	flex-basis: 100%;
+	justify-content: space-between;
+}
+.dian{
+    display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 15px;
+	background: #000;
+	order: auto;
+}
+.d3d{
+    display: flex;
+    box-sizing: border-box;
+	height: 100px;
+    width: 100px;
+	margin: 0 auto;		
+	transform-style: preserve-3d;
+	position: relative;
+	transform: rotateX(45deg) rotateY(45deg);
+    animation: rotate linear 20s infinite;
+}
+@-webkit-keyframes rotate{
+	from{
+		transform: rotateX(0deg) rotateY(0deg);
+	}
+	to{
+		transform: rotateX(360deg) rotateY(360deg);
+	}
+}
+
+.d3d .the-box{
+    position: absolute;
+	width: 100px;
+	height: 100px;
+	opacity: 1;/*设置每个面的透明度*/
+}
+.d3d #one{
+    transform: rotateY(0) translateZ(50px);
+}
+.d3d #two{
+    transform: rotateY(-90deg) translateZ(50px);
+}
+.d3d #three{
+    transform: rotateX(90deg) translateZ(50px);
+}
+.d3d #four{
+    transform: rotateX(-90deg) translateZ(50px);
+}
+.d3d #five{
+    transform: rotateY(90deg) translateZ(50px);
+}
+.d3d #six{
+    transform: rotateY(180deg) translateZ(50px);
+}
