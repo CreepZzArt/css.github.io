@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>我们是秀兵！</title>
+        <link rel="stylesheet" href="../css/XB.css"/>
+    </head>
+    <body>
+        <div class="content">
+            <div class="switch">
+            </div>
+            <div class="text">
+                <div class="flox">
+                    <input type="button" value="1" class="ID1" onclick="next1()"></input>
+                    <input type="button" value="2" class="ID2" onclick="next2()"></input>
+                    <input type="button" value="3" class="ID3" onclick="next3()"></input>
+                </div>
+                <img src="../img/秀兵.png">
+                <p id="ID">ID:躺者如C</p>
+                <br><br>
+                <input type="text" name="" id="get" value="" />
+                <input type="button" value="替换" onclick="setID()"/>
+            </div>
+        </div>
+		
+        <script type="text/javascript">
+			function setID(){
+                document.getElementById('ID').innerText = document.getElementById('get').value;
+            }
+            function next1(){
+                var myGod = document.getElementsByTagName("img")[0];
+                myGod.setAttribute("src","../img/秀兵.png");
+            }
+            function next2(){
+                var myGod = document.getElementsByTagName("img")[0];
+                myGod.setAttribute("src","../img/秀兵2.png");
+            }
+            function next3(){
+                var myGod = document.getElementsByTagName("img")[0];
+                myGod.setAttribute("src","../img/秀兵3.png");
+            }
+		</script>
+    </body>
+</html>
